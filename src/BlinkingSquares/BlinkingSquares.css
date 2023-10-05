@@ -1,0 +1,242 @@
+.square-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/*/////////////////square part start/////////////////*/
+.square {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #dadada;
+  opacity: 0;
+  filter: blur(1.5px);
+  animation: initial-delay 0s ease-in-out forwards,
+    fade-in 10s ease-in-out infinite normal none;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes initial-delay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*/ //////////////square part End///////////////////
+---------------------------------------------------*/
+
+/*///////////////firstBg Start///////////////////*/
+.firstBg {
+  background-color: #454764;
+  background-image: linear-gradient(90deg, #393b55 0%, #2a2c47 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/*
+/////////////////firstBg End/////////////////////
+-----------------------------------------------------------*/
+
+/*////////////////secondBg Start////////////////*/
+.secondBg {
+  background-color: #2f70e3;
+  background-image: linear-gradient(269deg, #2f70e3 0%, #ee9e96 99%);
+  animation: g-fade-in 2s linear 0s 1 normal none;
+}
+
+@keyframes g-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*////////////////secondBg End///////////////////
+-----------------------------------------------------*/
+
+/* /////////////////middleBox Start//////////////////*/
+.middleBox {
+  background-color: #343b4eeb;
+
+  padding: 60px 40px;
+  position: absolute;
+  border-radius: 10px;
+  opacity: 1;
+  /* font-family: sans-serif; */
+  color: white;
+  text-align: center;
+  animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s
+    reverse both;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 700px;
+  gap: 40px;
+  width: 100%;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.94);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+} /* /////////////////middleBox End/////////////////// */
+/*------------------------------------------------------ */
+
+/* /////////////////title Start/////////////////// */
+.title {
+  font-size: 36px;
+  letter-spacing: 8px;
+  font-weight: 300;
+  line-height: 2;
+  animation: scale-up-center-title 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s
+    reverse both;
+}
+
+@keyframes scale-up-center-title {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* /////////////////title End///////////////////
+---------------------------------------------- */
+
+/* /////////////////divider Start/////////////////// */
+.divider {
+  height: 6px;
+  opacity: 0.4;
+  animation: scale-up-center-divider 0.5s cubic-bezier(0.39, 0.575, 0.565, 1)
+    1.5s reverse both;
+}
+@keyframes scale-up-center-divider {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* /////////////////divider End/////////////////// 
+-------------------------------------------------*/
+
+/* /////////////////description Start/////////////////// */
+.description {
+  letter-spacing: 4px;
+  line-height: 3;
+  font-weight: 200;
+  color: #d8d5df;
+  font-size: 19px;
+  animation: scale-up-center-description 0.5s
+    cubic-bezier(0.39, 0.575, 0.565, 1) 1.9s reverse both;
+}
+@keyframes scale-up-center-description {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* /////////////////description End///////////////////
+----------------------------------------------------- */
+
+/* /////////////////contact-container Start/////////////////// */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  animation: scale-up-center-contact 0.5s cubic-bezier(0.39, 0.575, 0.565, 1)
+    2.3s reverse both;
+}
+@keyframes scale-up-center-contact {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.twitter {
+  height: 58px;
+  width: 58px;
+  background-color: #71c6ec;
+  border-radius: 100%;
+  padding: 10px;
+}
+.facebook {
+  height: 58px;
+  width: 58px;
+  background-color: #6e93db;
+  border-radius: 100%;
+  padding: 9px;
+}
+.phone {
+  height: 58px;
+  width: 58px;
+  background-color: #84ba93;
+  border-radius: 100%;
+  padding: 14px;
+}
+.mail {
+  height: 58px;
+  width: 58px;
+  background-color: #c98fa8;
+  border-radius: 100%;
+  padding: 12px;
+}
+/* /////////////////contact-container End/////////////////// */
