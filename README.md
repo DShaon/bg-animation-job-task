@@ -1,8 +1,51 @@
-# React + Vite
+# Blinking Squares React Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Blinking Squares React Component is a visually appealing user interface element created using React. It displays a grid of animated squares that blink intermittently, creating an eye-catching background effect.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+To use the Blinking Squares React Component in your project, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/DShaon/bg-animation-job-task.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+
+Make sure to customize the component's appearance and behavior by modifying the CSS styles and adjusting the component's props in `BlinkingSquares.js`.
+
+## Usage
+Once installed, you can include the Blinking Squares React Component in your project like this:
+
+
+```jsx
+import React from 'react';
+import BlinkingSquares from './BlinkingSquares';
+
+const App = () => {
+  return (
+    <div>
+      <BlinkingSquares />
+      
+    </div>
+  );
+};
+
+export default App;
+
+
+## Customization
+
+### Adjust Grid Size and Spacing:
+You can modify the number of rows (`numRows`), number of columns (`numCols`), square size (`squareSize`), and spacing between squares (`spacing`) in the `BlinkingSquares.js` file.
+
+### Change Animation Duration:
+The animation delay for each square is randomized between 0s and 10s, creating a blinking effect. You can adjust the animation delay by modifying the `Math.random() * 10 + 's'` expression in the `useEffect` of `BlinkingSquares.js`.
+
+### Customize Square Appearance:
+The appearance of the squares can be customized by modifying the CSS rules in the `BlinkingSquares.css` file. You can change the square color, opacity, blur effect, and other visual properties according to your preferences.

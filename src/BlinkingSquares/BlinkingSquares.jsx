@@ -17,18 +17,18 @@ const BlinkingSquares = () => {
 
     const squareElements = [];
 
-    // here in this loop create box vertically and horizontaly.
+    // this loop  creating square box vertically and horizontaly.
     for (let row = 0; row < numRows; row++) {
       for (let col = 0; col < numCols; col++) {
-        // this will generate random delay for each box .. cause, to create blinking effect then each box need a different animation delay, and this will generate random delay for each box...and square box will appeard and disappeard in different time so that it its look like blinking box..
+        // this will generate random delay for each box .. for creating blinking effect each box need a different animation delay, and this will generate random delay for each square box, and square box will appeard and disappeard in random intervals, so that it look like blinking box..
         const animationDelay = Math.random() * 10 + "s";
 
-        // this will set position for horizontaly  for each box created when loop is running
+        // this will set position for horizontaly  aligned box .
         const left = col * (squareSize + spacing) + "px";
-        // and this will also do the same , but it will set positon for vertically .
+        // and this will also do the same , its just set positon for vertically aligned squared box.
         const top = row * (squareSize + spacing) + "px";
 
-        // and this creating square box and and then added in  "squareElements"
+        // and this creating square box and  then added in  "squareElements"
         squareElements.push(
           <div
             key={`${row}-${col}`}
@@ -55,7 +55,7 @@ const BlinkingSquares = () => {
       <div>
         <div className="firstBg ">
           <div className="secondBg ">
-            {/* and here is those updated animated square box container */}
+            {/* and here is those  animated square box  */}
             <div className="square-container">{squares}</div>
           </div>
           <div className=" middleBox">
