@@ -1,15 +1,16 @@
 import Automation from "./Automation/Automation";
+import ParticleBackground from "./Automation/ParticleBackground/ParticleBackground";
 import BlinkingSquares from "./BlinkingSquares/BlinkingSquares";
-
-
-
 
 function App() {
   return (
     <>
-      {/* <BlinkingSquares></BlinkingSquares> */}
+      <div className="bg-black">
+        {/* <BlinkingSquares></BlinkingSquares> */}
 
-      <Automation></Automation>
+        <Automation></Automation>
+        {/* <ParticleBackground></ParticleBackground> */}
+      </div>
     </>
   );
 }
