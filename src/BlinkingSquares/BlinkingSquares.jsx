@@ -8,7 +8,6 @@ const BlinkingSquares = () => {
   const [squares, setSquares] = useState([]);
 
 
-
   useEffect(() => {
     const numRows = 22;
     const numCols = 45;
@@ -45,6 +44,7 @@ const BlinkingSquares = () => {
         console.log("start");
       }
     }
+    
     // console.log('render check')
     // Update state with the squares box
     setSquares(squareElements);
